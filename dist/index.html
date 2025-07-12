@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infinexa - By Snigdhendu</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="custome-style.css">
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Domine:wght@400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Libertinus+Math&display=swap');
+    </style>
+</head>
+
+<!-- npx @tailwindcss/cli -i ./src/input.css -o ./dist/style.css --watch -->
+
+<body class="bg-black sm:mx-0 text-white">
+    <section class="nav_bar w-full flex justify-between items-center px-10">
+        <div class="logo flex">
+            <img class="w-15" src="/dist/img/logo-bg-remove (1).png" alt="Logo">
+        </div>
+        <ul class="hidden md:flex justify-between text-lg">
+            <li><a class="pr-10" href="#home">Home</a></li>
+            <li><a class="pr-10" href="#about">About</a></li>
+            <li><a class="pr-10" href="#products">Products</a></li>
+            <li><a class="pr-10" href="#New">New</a></li>
+            <li><a class="pr-10" href="#contact">Contact</a></li>
+        </ul>
+        <div class="three_bar hidden">
+            <i class="none fa-solid fa-bars" style="color: #ffffff;"></i>
+        </div>
+        
+    </section>
+    <section class="hero flex flex-col justify-start items-center pt-10 md:pt-48 text-center h-[40rem] md:h-[60rem] relative bg-[linear-gradient(180deg,rgba(0,0,0,1)_0%,rgba(0,0,0,1)_79%,rgb(0,90,180,0.5)_100%)]">
+        <div id="star-container"></div>
+
+        <div class="content flex flex-col justify-center items-center">
+            <h1 class="text-3xl md:text-6xl mb-10 font-bold hero_heading">Discover Innovation. Shop the Future.</h1>
+            <p class="w-[70%]">Explore next-gen tech crafted for performance and elegance. From smart devices to intelligent experiences, Infinexa brings premium products straight to your hands—designed to inspire, built to last.</p>
+
+            <button class="explor_btn px-10 py-3 m-10 rounded-xl text-lg  text-black hover:bg-[var(--btn-bright-color)] transition duration-150 z-20">
+                Explore More
+            </button>
+        </div>
+    </section>
+
+    <section class="outer_box mx-auto w-110 sm:w-[38rem] md:w-[45rem] lg:w-[50rem] md:m-auto justify-between relative overflow-hidden bottom-64 rounded-3xl bg-[var(--color-box-border1)] p-5 shadow-up z-10 border border-white">
+        <div class="bar absolute bottom-[-90%] left-[15rem] w-100 h-150 bg-[linear-gradient(90deg,rgba(0,90,180,1)0%,rgb(20,255,204,1)40%,rgba(20,255,204,1)50%,rgba(20,255,204,1)60%,rgba(0,90,180,1)100%)] animate-spin duration-75 origin-top z-10"></div>
+
+        <div class="innerDiv relative h-auto flex flex-col sm:flex-row justify-between bg-white rounded-2xl overflow-hidden z-30">
+            <div class="content_div w-[100%] sm:w-60 md:w-64 lg:w-96 text-black pt-8 pl-4 lg:pl-8 pr-3">
+                <h2 class="text-3xl sm:text-[25px] md:text-3xl">Experience the Future of <br>
+                    Sound with Earbuds</h2>
+
+                <p class="mt-6 mb-10">Enjoy crystal-clear sound and all-day comfort with Infinexa—seamless wireless freedom designed for music, calls, and movement anywhere.</p>
+
+                <button class="shop_now px-5 py-3 m-2 border-2 border-coustom rounded-xl text-lg text-black">Shop Now</button>
+            </div>
+            <div class="img h-100 sm:h-auto w-[100%] sm:w-80 py-8 bg-amber-50 border-t-2 sm:border-t-0 sm:border-l-2 border-coustom">
+                <div class="section">
+                    <ul class="w-[100%] sm:w-80 h-10 flex text-black text-[1rem] relative bottom-8 sm:absolute sm:top-0">
+                        <li class="li border-coustom w-64 flex p-4 items-center">
+                            <i class="fa-solid fa-laptop-code" style="color: rgb(0, 90, 180);"></i>
+                            <span class="text-blue-700 m-1">Laptop</span>
+                        </li>
+                        <li class="li border-b-2 border-l-2 border-coustom w-12 flex p-4 items-center">
+                            <i class="fa-solid fa-mobile-screen-button" style="color: rgb(0, 90, 180);"></i>
+                            <span class="hidden text-blue-700 m-1">Mobile</span>
+                        </li>
+                        <li class="li border-b-2 border-l-2 border-coustom w-12 flex p-4 items-center">
+                            <i class="fa-solid fa-headphones" style="color: rgb(0, 90, 180);"></i>
+                            <span class="hidden text-blue-700 m-1">Earbuds</span>
+                        </li>
+                        <li class="li border-b-2 border-l-2 border-coustom w-12 flex p-4 items-center">
+                            <i class="fa-solid fa-tablet-screen-button" style="color: rgb(0, 90, 180);"></i>
+                            <span class="hidden text-blue-700 m-1">Tablate</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="imgs h-80 flex overflow-hidden relative bottom-6 left-14 sm:top-6 sm:left-4">
+                    <img class="w-75 h-auto " src="/dist/img/laptop-ad.png" alt="Laptop">
+                    <img class="w-75 h-auto hidden" src="/dist/img/mobile-ad.png" alt="Mobile">
+                    <img class="w-75 h-auto hidden" src="/dist/img/airpods-pro-2-hero-select-202409.png" alt="Earbuds">
+                    <img class="w-75 h-auto hidden" src="/dist/img/tablate-ad.png" alt="Tablate">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="home flex flex-col text-black">
+        <div class="bg-amber-50 flex flex-col lg:flex-row-reverse justify-between align-middle mx-14 lg:mx-36 p-5 rounded-3xl box-shadow1 border">
+            <div class="home-context lg:pr-10 pl-5 flex flex-col justify-center">
+                <h3 class="text-3xl mb-4 lg:mb-10">Infinexa NovaBook Pro — Power Meets Precision</h3>
+                
+                <p>Unleash your potential with the NovaBook Pro, a laptop built for those who demand more. Featuring a stunning 16-inch 4K display, ultra-fast processors, and AI-optimized performance, it delivers unmatched speed and clarity. Whether you're creating, coding, or streaming, the NovaBook Pro turns every task into a seamless experience—all wrapped in a sleek, lightweight design built to move with you.</p>
+            </div>
+            <div class="home-product lg:w-[120rem] xl:w-[150rem]">
+                <model-viewer class="rounded-3xl"
+                    src="/dist/img/laptop.glb"
+                    alt="My 3D model"
+                    ori
+                    camera-controls
+                    auto-rotate
+                    style="width: 100%; height: 400px;">
+                </model-viewer>
+            </div>
+        </div>
+        <div class="statements px-10 md:px-22 mt-36 flex flex-col gap-20">
+            <span>
+                <p class="comment1 text-white text-2xl md:text-3xl lg:text-4xl">“I was blown away by the NovaBook Pro. Ultra-sleek design, incredible battery life, and flawless performance. Infinexa really delivers on its promise of innovation.”</p>
+            </span>
+            <span>
+                <p class="comment2 left-[40%] text-white text-2xl md:text-3xl lg:text-4xl text-right">“Infinexa has completely changed the way I shop for tech. Their products don’t just look amazing—they perform even better. Truly next-level quality!”</p>
+            </span>
+            
+            <span>
+                <p class="comment3 text-white text-2xl md:text-3xl lg:text-4xl">“Customer service was fantastic and shipping was super fast. It’s rare to see a tech company combine style, power, and service so well.”</p>
+            </span>
+        </div>
+    </section>
+
+    <section class="logo_list">
+        <div class="scrolling-container m-5 lg:m-10 xl:m-30 overflow-hidden flex">
+            <div class="left w-30 lg:w-40 xl:w-70 h-30 bg-[linear-gradient(90deg,rgba(0,0,0,1)0%,rgba(0,0,0,0.77)57%,rgba(0,0,0,0.5)77%,rgba(0,0,0,0)100%)] absolute left-5 lg:left-10 xl:left-25 z-20"></div>
+            <div class="scrolling-content w-[100%] flex gap-20 z-10">
+
+                <img src="/dist/img/nike.png" alt="Nike">
+                <img class="p-1" src="/dist/img/adidas.png" alt="Adidas">
+                <img class="apple p-5" src="/dist/img/apple.png" alt="Apple">
+                <img class="p-4" src="/dist/img/tesla.png" alt="Tesla">
+                <img src="/dist/img/samsung.png" alt="Samsung">
+                <img src="/dist/img/sony.png" alt="Sony">
+                <img src="/dist/img/lg.png" alt="LG">
+                <img class="p-3" src="/dist/img/nike.png" alt="Nike">
+            </div>
+            <div class="right w-30 lg:w-40 xl:w-70 h-30 bg-[linear-gradient(270deg,rgba(0,0,0,1)0%,rgba(0,0,0,0.77)57%,rgba(0,0,0,0.5)77%,rgba(0,0,0,0)100%)] absolute right-5 lg:right-10 xl:right-25 z-20"></div>
+        </div>
+    </section>
+
+    <section class="about flex flex-col align-middle p-16 lg:mx-0">
+        <div class="about_content flex flex-col xl:flex-row justify-between items-center sm:h-140">
+            <div class="xl:w-[55%] bg-[rgb(0,90,180)] p-10 rounded-3xl">
+                <h2 class="text-4xl">About Us :</h2>
+
+                At Infinexa, we believe in connecting people with the future of technology. With a network that personally reaches over 1 million+ individuals and a passionate team of 5000+ highly qualified professionals, we are proud to be a trusted partner of the world’s leading brands — including Nike, Adidas, Apple, Tesla, Samsung, Sony, and LG.<br><br>
+
+                We specialize in offering a wide range of digital appliances, including:
+                <ul class="mt-7">
+                    <li>Laptops</li>
+                    <li>Mobile Phones</li>
+                    <li>Tablets</li>
+                    <li>Smartwatches</li>
+                    <li>Wireless Earbuds</li>
+                    <li>Smart Home Devices</li>
+                    <li>Smart Pens</li>
+                    <li>...and more</li>
+                </ul>
+            </div>
+            <img class="relative bottom-0 sm:left-32 sm:bottom-64 lg:left-52 md:bottom-80 sm:w-64 md:w-80 xl:w-96 xl:bottom-0 xl:left-0 h-auto" src="/dist/img/lg.png" alt="About Us">
+        </div>
+        <p>
+            Driven by excellence and backed by a mission to make cutting-edge technology accessible to everyone, Infinexa is not just an e-commerce platform — it’s a community, a lifestyle, and a commitment to quality.<br>
+
+            Whether you're a tech enthusiast, a working professional, or someone who simply values great products and reliable service — Infinexa is your go-to destination for the latest in digital innovation.
+        </p>
+    </section>
+
+    <section class="p-16 flex flex-col justify-evenly items-center">
+        <h2 class="text-4xl">Our Products</h2>
+        <div class="model bg-[rgb(0,90,180)] w-[60%] h-80 m-28 p-10 flex flex-wrap justify-center items-end rounded-full overflow-hidden">
+            <img class="w-52 " src="/dist/img/vision-Pro-img-bg.png" alt="Product Image">
+            <img class="w-52 " src="/dist/img/ipad-mini.png" alt="Product Image">
+            <img class="w-72 " src="/dist/img/laptop.png" alt="Product Image">
+            <img class="w-14 " src="/dist/img/mobile.png" alt="Product Image">
+            <img class="w-12 ml-3" src="/dist/img/earbords.png" alt="Product Image">
+        </div>
+        <div class="product flex ">
+            <div class="product1 flex flex-col gap-3 items-center">
+                <img src="/dist/img/mobile-ad.png" alt="Smart Phone">
+                <h3>vivo M23 X</h3>
+                <p class="text-orange-300">49,999₹</p>
+                <button class="bg-[rgb(0,90,180)] px-5 py-3 rounded-xl" src="">Explore</button>
+            </div>
+            <div class="product2 flex flex-col gap-3 items-center">
+                <img src="/dist/img/laptop.png" alt="Smart Phone">
+                <h3>vivo M23 X</h3>
+                <p class="text-orange-300">1,59,999₹</p>
+                <button class="bg-[rgb(0,90,180)] px-5 py-3 rounded-xl" src="">Explore</button>
+            </div>
+            <div class="product3 flex flex-col gap-3 items-center">
+                <img src="/dist/img/earbords.png" alt="Smart Phone">
+                <h3>vivo M23 X</h3>
+                <p class="text-orange-300">5,999₹</p>
+                <button class="bg-[rgb(0,90,180)] px-5 py-3 rounded-xl" src="">Explore</button>
+            </div>
+            <div class="product4 flex flex-col gap-3 items-center">
+                <img src="/dist/img/tablate-ad.png" alt="Smart Phone">
+                <h3>vivo M23 X</h3>
+                <p class="text-orange-300">39,999₹</p>
+                <button class="bg-[rgb(0,90,180)] px-5 py-3 rounded-xl" src="">Explore</button>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
